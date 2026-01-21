@@ -41,6 +41,7 @@
         "@moq/signals": "workspace:^",
         "async-mutex": "^0.5.0",
         "comlink": "^4.4.2",
+        "solid-js": "^1.9.10",
         "zod": "^4.1.5",
       },
       "devDependencies": {
@@ -58,6 +59,7 @@
       "dependencies": {
         "@moq/hang": "workspace:^",
         "@moq/hang-ui": "workspace:^",
+        "solid-js": "^1.9.10",
       },
       "devDependencies": {
         "@tailwindcss/typography": "^0.5.16",

@@ -16,13 +16,20 @@ const urlParams = new URLSearchParams(window.location.search);
 const path = urlParams.get("path");
 const url = urlParams.get("url");
 
+// Default relay URL follows current host/IP unless `?url=` is provided.
+const defaultUrl = `http://${window.location.hostname}:4443/anon`;
+
+
 if (path) {
 	watch.setAttribute("path", path);
 	config?.setAttribute("path", path);
 }
 if (url) {
-	watch.setAttribute("url", url);
-	config?.setAttribute("url", url);
+        watch.setAttribute("url", url);
+        config?.setAttribute("url", url);
+} else {
+        watch.setAttribute("url", defaultUrl);
+        config?.setAttribute("url", defaultUrl);
 }
 
 // Sync config changes to the watch element.

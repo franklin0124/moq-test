@@ -7,13 +7,14 @@
 	"license": "(MIT OR Apache-2.0)",
 	"repository": "github:moq-dev/moq",
 	"scripts": {
-		"dev": "vite --open",
+		"dev": "vite --host 0.0.0.0 --port 5173",
 		"build": "vite build",
 		"check": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@moq/hang": "workspace:^",
-		"@moq/hang-ui": "workspace:^"
+		"@moq/hang-ui": "workspace:^",
+		"solid-js": "^1.9.10"
 	},
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.16",

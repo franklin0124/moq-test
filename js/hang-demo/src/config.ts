@@ -22,7 +22,7 @@ export default class HangConfig extends HTMLElement {
 
 		this.#urlInput = document.createElement("input");
 		this.#urlInput.type = "url";
-		this.#urlInput.placeholder = "http://localhost:4443/anon";
+		this.#urlInput.placeholder = `http://${window.location.hostname}:4443/anon`;
 		this.#urlInput.style.cssText = `
 			width: 100%; padding: 0.5rem; margin-bottom: 0.75rem;
 			background: #111; border: 1px solid #333; border-radius: 4px;
